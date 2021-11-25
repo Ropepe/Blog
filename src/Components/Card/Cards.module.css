@@ -1,0 +1,10 @@
+.main {
+  padding: 50px;
+}
+.cont {
+  width: 200px;
+  height: 250px;
+  border: solid 1px blueviolet;
+  margin: 0 20px;
+  background-color: cadetblue;
+}
