@@ -1,0 +1,7 @@
+.main {
+  background-color: burlywood;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+}
