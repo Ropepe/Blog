@@ -6,8 +6,7 @@ import Navigation from "./Components/Navbar/Navigation";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Ropepe</h1>
+    <div>
       <Navigation />
       <Hero />
       <Main />
