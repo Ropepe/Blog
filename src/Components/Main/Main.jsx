@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <div className={styles.main}>
       <div className={styles.container}>
-        <h1>Main</h1>
+        <h1>Maina</h1>
         <div className={styles.cards}>
           <Cards />
           <Cards />
