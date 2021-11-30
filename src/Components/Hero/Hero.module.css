@@ -1,7 +1,10 @@
 .main {
-  height: cover;
-  background-image: "../../Images/Banner.jpeg";
-  background-attachment: fixed;
+  /* background-image: url(./Images/Banner.jpeg); */
+  background-image: linear-gradient(to bottom right, #547fce, #1cadf0);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
 }
 .main h1 {
   position: relative;
