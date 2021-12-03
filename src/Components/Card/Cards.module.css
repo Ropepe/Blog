@@ -11,3 +11,6 @@
   text-align: center;
   padding: 10px;
 }
+.card__title {
+  color: rgba(27, 111, 190, 0.582);
+}
