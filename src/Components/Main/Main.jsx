@@ -10,6 +10,9 @@ import {
   Switch,
   useRouteMatch,
 } from "react-router-dom";
+import Tabs from "react-bootstrap/Tabs";
+import Tab from "react-bootstrap/Tab";
+
 import CardContainer from "../CardContainer/CardContainer";
 
 const categorie = [
@@ -101,7 +104,28 @@ const Main = () => {
           <div className={styles.sections__group}>
             <div className={styles.categorie__titles}>Categories:</div>
             <div className={styles.categorie__list}>
-              <ul className={styles.links}>
+              <Tabs
+                defaultActiveKey="home"
+                id="uncontrolled-tab-example"
+                className="mb-5"
+              >
+                <Tab eventKey="home" title="Home">
+                  <CardContainer apiData={apiData} />
+                </Tab>
+                <Tab eventKey="tesla" title="Tesla">
+                  <CardContainer apiData={teslaPost} />
+                </Tab>
+                <Tab eventKey="bussines" title="Bussines">
+                  <CardContainer apiData={bussinesPost} />
+                </Tab>
+                <Tab eventKey="headline" title="Headline">
+                  <CardContainer apiData={headlinePost} />
+                </Tab>
+                <Tab eventKey="wallstreet" title="Wall street">
+                  <CardContainer apiData={wallStreetPost} />
+                </Tab>
+              </Tabs>
+              {/* <ul className={styles.links}>
                 {categorie.map((categories) => {
                   // if (categories.id != 1)
                   return (
@@ -116,11 +140,11 @@ const Main = () => {
                     </li>
                   );
                 })}
-              </ul>
+              </ul> */}
             </div>
           </div>
           {/* Kartice */}
-
+          {/* 
           <Switch>
             <Route exact path={`${path}`}>
               <CardContainer apiData={apiData} />
@@ -137,7 +161,7 @@ const Main = () => {
             <Route path="/wallstreet">
               <CardContainer apiData={wallStreetPost} />
             </Route>
-          </Switch>
+          </Switch> */}
 
           {/* Kraj Kartica */
           /* ------------ */
