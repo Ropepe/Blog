@@ -1,0 +1,16 @@
+.main {
+  padding: 30px;
+}
+.cont {
+  width: 200px;
+  height: 250px;
+  border: solid 1.5px rgba(0, 0, 0, 0.062);
+  /* margin: 0 20px; */
+  background-color: rgba(0, 0, 0, 0.041);
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.card__title {
+  color: rgba(27, 111, 190, 0.582);
+}

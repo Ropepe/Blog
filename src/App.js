@@ -1,12 +1,32 @@
 import "./App.css";
-import Button from "@mui/material/Button";
+import Footer from "./Components/Footer/Footer";
+import Hero from "./Components/Hero/Hero";
+import Main from "./Components/Main/Main";
+import Navigation from "./Components/Navbar/Navigation";
+import { Route, Switch } from "react-router-dom";
+import NotMatch from "./Components/NotMatch/NotMatch";
+import React from "react";
+import Holder from "./Components/Card/Holder.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Ropepe</h1>
-      <Button variant="contained">Дугмић</Button>
-    </div>
+    <>
+      <Navigation />
+      <Switch>
+        <Route exact path="/">
+          <Hero />
+          <Main />
+          <Footer />
+        </Route>
+        <Route path="/about">
+          <Holder />
+        </Route>
+        <Route path="/contact"></Route>
+        <Route path="*">
+          <NotMatch />
+        </Route>
+      </Switch>
+    </>
   );
 }
 

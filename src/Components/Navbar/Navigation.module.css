@@ -1,0 +1,27 @@
+.main {
+  background-color: rgba(255, 255, 255, 0.712);
+
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  height: 45px;
+}
+.btn {
+  margin: 10px 10px;
+}
+.linkovi {
+  color: rgba(27, 111, 190, 0.582);
+  text-decoration: none;
+}
+.links {
+  list-style: none;
+  display: inline-flex;
+  /* justify-content: right; */
+  margin: 10px 20px;
+
+  list-style: none;
+}
+.main ul {
+  margin-right: 30px;
+  float: right;
+}
