@@ -125,7 +125,7 @@ const Main = () => {
             <Route exact path={`${path}`}>
               <CardContainer apiData={apiData} />
             </Route>
-            <Route path={`${path}/tesla:Main`}>
+            <Route path={`${path}/tesla`}>
               <CardContainer apiData={teslaPost} />
             </Route>
             <Route path="/bussines">

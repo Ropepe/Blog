@@ -13,7 +13,7 @@ function App() {
     <>
       <Navigation />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/" end="to">
           <Hero />
           <Main />
           <Footer />
@@ -22,9 +22,10 @@ function App() {
           <Holder />
         </Route>
         <Route path="/contact"></Route>
-        <Route path="*">
+
+        {/* <Route path="*">
           <NotMatch />
-        </Route>
+        </Route> */}
       </Switch>
     </>
   );
