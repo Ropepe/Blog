@@ -11,19 +11,14 @@ let links = [
   },
   {
     id: 2,
-    path: "/contact",
-    text: "Contact",
-  },
-  {
-    id: 3,
     path: "/about",
     text: "About",
   },
-  // {
-  //   id: 4,
-  //   path: "*",
-  //   text: "NotMatch",
-  // },
+  {
+    id: 3,
+    path: "/contact",
+    text: "Contact",
+  },
 ];
 const Navigation = () => {
   return (

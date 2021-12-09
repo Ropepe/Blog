@@ -1,0 +1,122 @@
+.main_image {
+  display: block;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.image_container {
+  height: 60vh;
+  overflow: hidden;
+  background-image: url("../Images/about-1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main_container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+h1 {
+  color: rgb(77, 162, 211);
+  padding: 20px 0;
+}
+p {
+  color: #666666;
+  line-height: 2em;
+  padding: 10px 0;
+  text-align: justify;
+}
+.second_image {
+  height: 40vh;
+  overflow: hidden;
+  background-image: url("../Images/about-2.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card {
+  min-height: 400px;
+  width: 30%;
+  min-width: 250px;
+  padding: 1.5rem;
+  background-color: #f4f4f4;
+}
+.card_container {
+  padding: 60px 10px;
+  flex-direction: row;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 50px;
+  flex-basis: 33%;
+  justify-content: space-around;
+}
+.icon_size {
+  font-size: 100px;
+  padding-bottom: 1.5rem;
+  color: #8f8f8f;
+}
+.card_container p {
+  font-size: 18px;
+  color: #666666;
+}
+h2 {
+  color: rgb(77, 162, 211);
+
+  padding-bottom: 1rem;
+}
+.third_image {
+  height: 40vh;
+  overflow: hidden;
+  background-image: url("../Images/about-3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main {
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 960px) {
+  .card {
+    min-height: 400px;
+    width: 45%;
+    min-width: 350px;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+  }
+  .card_container {
+    padding: 60px 10px;
+    flex-direction: row;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    flex-basis: 33%;
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 799px) {
+  .card {
+    min-height: 400px;
+    width: auto;
+    min-width: 300px;
+    padding: 1.5rem;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    text-align: justify;
+  }
+  .card_container {
+    padding: 60px 10px;
+    flex-direction: column;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    flex-basis: 33%;
+    justify-content: space-around;
+  }
+}

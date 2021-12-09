@@ -6,7 +6,8 @@ import Navigation from "./Components/Navbar/Navigation";
 import { Route, Switch } from "react-router-dom";
 import NotMatch from "./Components/NotMatch/NotMatch";
 import React from "react";
-import Holder from "./Components/Card/Holder.jsx";
+import Contact from "./Components/Contact/Contact";
+import About from "./Components/About/About";
 
 function App() {
   return (
@@ -19,9 +20,12 @@ function App() {
           <Footer />
         </Route>
         <Route path="/about">
-          <Holder />
+          <About />
+          <Footer />
         </Route>
-        <Route path="/contact"></Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
 
         {/* <Route path="*">
           <NotMatch />
